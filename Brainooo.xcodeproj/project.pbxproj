@@ -12,6 +12,7 @@
 		306DE82620CEB3530093DE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306DE82420CEB3530093DE19 /* Main.storyboard */; };
 		306DE82820CEB3550093DE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306DE82720CEB3550093DE19 /* Assets.xcassets */; };
 		306DE82B20CEB3550093DE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306DE82920CEB3550093DE19 /* LaunchScreen.storyboard */; };
+		A83B0D643D3DA022CD538E01 /* Pods_Brainooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411099CAE43F036961069966 /* Pods_Brainooo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		306DE82720CEB3550093DE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306DE82A20CEB3550093DE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		306DE82C20CEB3550093DE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		411099CAE43F036961069966 /* Pods_Brainooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brainooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC3E13D30BABA77D882D6936 /* Pods-Brainooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainooo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo.release.xcconfig"; sourceTree = "<group>"; };
+		B8AF9986FAACCA6CB680C807 /* Pods-Brainooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainooo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A83B0D643D3DA022CD538E01 /* Pods_Brainooo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		049919A0143D70A672D07642 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8AF9986FAACCA6CB680C807 /* Pods-Brainooo.debug.xcconfig */,
+				AC3E13D30BABA77D882D6936 /* Pods-Brainooo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		306DE81420CEB3530093DE19 = {
 			isa = PBXGroup;
 			children = (
 				306DE81F20CEB3530093DE19 /* Brainooo */,
 				306DE81E20CEB3530093DE19 /* Products */,
+				049919A0143D70A672D07642 /* Pods */,
+				8410DB6E2182738255C02A03 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Brainooo;
 			sourceTree = "<group>";
 		};
+		8410DB6E2182738255C02A03 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				411099CAE43F036961069966 /* Pods_Brainooo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 306DE82F20CEB3550093DE19 /* Build configuration list for PBXNativeTarget "Brainooo" */;
 			buildPhases = (
+				8872889247EAABFEEE36688F /* [CP] Check Pods Manifest.lock */,
 				306DE81920CEB3530093DE19 /* Sources */,
 				306DE81A20CEB3530093DE19 /* Frameworks */,
 				306DE81B20CEB3530093DE19 /* Resources */,
+				F0B02D6C3CFBCC6F179136F3 /* [CP] Embed Pods Frameworks */,
+				697490EFE7EB6BAEDAC5A931 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,62 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		697490EFE7EB6BAEDAC5A931 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8872889247EAABFEEE36688F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Brainooo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B02D6C3CFBCC6F179136F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PusherChatkit/PusherChatkit.framework",
+				"${BUILT_PRODUCTS_DIR}/PusherPlatform/PusherPlatform.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PusherChatkit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PusherPlatform.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		306DE81920CEB3530093DE19 /* Sources */ = {
@@ -278,15 +361,13 @@
 		};
 		306DE83020CEB3550093DE19 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B8AF9986FAACCA6CB680C807 /* Pods-Brainooo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J6DLW4UE6;
 				INFOPLIST_FILE = Brainooo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuandris.Brainooo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +377,13 @@
 		};
 		306DE83120CEB3550093DE19 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC3E13D30BABA77D882D6936 /* Pods-Brainooo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J6DLW4UE6;
 				INFOPLIST_FILE = Brainooo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.samuandris.Brainooo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

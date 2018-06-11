@@ -1,0 +1,15 @@
+PODS:
+  - PusherChatkit (0.8.2):
+    - PusherPlatform (~> 0.5.0)
+  - PusherPlatform (0.5.0)
+
+DEPENDENCIES:
+  - PusherChatkit
+
+SPEC CHECKSUMS:
+  PusherChatkit: d732fa1c0dd8284af44aecb498b7b44103811090
+  PusherPlatform: 207b5d16dae956a697d5d12d823d9855217998b0
+
+PODFILE CHECKSUM: a64505ee08e26b979eb5b42e5b8dcad082fde1c1
+
+COCOAPODS: 1.4.0
