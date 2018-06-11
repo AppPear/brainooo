@@ -18,19 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yAW-fw-MC3">
-                                <rect key="frame" x="169" y="307" width="36" height="30"/>
-                                <state key="normal" title="Send"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LmB-Qc-lCK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="sendMessageButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XA8-3y-yCN"/>
+                                    <action selector="touchDown:" destination="BYZ-38-t0r" eventType="touchDown" id="cwb-aZ-3PK"/>
+                                    <action selector="touchUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gRY-mN-5TT"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="yAW-fw-MC3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="287" id="JBy-az-L52"/>
-                            <constraint firstItem="yAW-fw-MC3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="keM-Rn-a5c"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>

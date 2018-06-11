@@ -11,10 +11,8 @@ import PusherChatkit
 
 class ViewController: UIViewController {
   var currentUser: PCCurrentUser?
-  
-  @IBAction func sendMessageButton(_ sender: Any) {
-    sendMessage(message: "a")
-  }
+  var mediumImpactFeedbackGenerator: UIImpactFeedbackGenerator?
+  var startTime:Double?
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -23,6 +21,14 @@ class ViewController: UIViewController {
     Timer.scheduledTimer(withTimeInterval: 0.2, repeats: false) { (timer) in
       self.checkIfUserNameHasBeenSet()
     }
+  }
+  
+  @IBAction func touchDown(_ sender: Any) {
+    startTime = Date().timeIntervalSinceReferenceDate
+  }
+  @IBAction func touchUp(_ sender: Any) {
+    let elapsed = (Date().timeIntervalSinceReferenceDate - startTime!) * 100
+   
   }
   
 }
