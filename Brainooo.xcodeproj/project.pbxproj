@@ -12,7 +12,9 @@
 		306DE82620CEB3530093DE19 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306DE82420CEB3530093DE19 /* Main.storyboard */; };
 		306DE82820CEB3550093DE19 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306DE82720CEB3550093DE19 /* Assets.xcassets */; };
 		306DE82B20CEB3550093DE19 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306DE82920CEB3550093DE19 /* LaunchScreen.storyboard */; };
-		306DE83320CEB9900093DE19 /* utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83220CEB9900093DE19 /* utils.swift */; };
+		306DE83320CEB9900093DE19 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83220CEB9900093DE19 /* Utils.swift */; };
+		306DE83720CEC6220093DE19 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83620CEC6220093DE19 /* AppState.swift */; };
+		306DE83920CEDC610093DE19 /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83820CEDC610093DE19 /* UserNameView.swift */; };
 		A83B0D643D3DA022CD538E01 /* Pods_Brainooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411099CAE43F036961069966 /* Pods_Brainooo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +26,9 @@
 		306DE82720CEB3550093DE19 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		306DE82A20CEB3550093DE19 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		306DE82C20CEB3550093DE19 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		306DE83220CEB9900093DE19 /* utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utils.swift; sourceTree = "<group>"; };
+		306DE83220CEB9900093DE19 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		306DE83620CEC6220093DE19 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		306DE83820CEDC610093DE19 /* UserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameView.swift; sourceTree = "<group>"; };
 		411099CAE43F036961069966 /* Pods_Brainooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brainooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3E13D30BABA77D882D6936 /* Pods-Brainooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainooo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo.release.xcconfig"; sourceTree = "<group>"; };
 		B8AF9986FAACCA6CB680C807 /* Pods-Brainooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainooo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -73,8 +77,10 @@
 			isa = PBXGroup;
 			children = (
 				306DE82020CEB3530093DE19 /* AppDelegate.swift */,
+				306DE83620CEC6220093DE19 /* AppState.swift */,
 				306DE82220CEB3530093DE19 /* ViewController.swift */,
-				306DE83220CEB9900093DE19 /* utils.swift */,
+				306DE83820CEDC610093DE19 /* UserNameView.swift */,
+				306DE83220CEB9900093DE19 /* Utils.swift */,
 				306DE82420CEB3530093DE19 /* Main.storyboard */,
 				306DE82720CEB3550093DE19 /* Assets.xcassets */,
 				306DE82920CEB3550093DE19 /* LaunchScreen.storyboard */,
@@ -221,9 +227,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				306DE83320CEB9900093DE19 /* utils.swift in Sources */,
+				306DE83320CEB9900093DE19 /* Utils.swift in Sources */,
 				306DE82320CEB3530093DE19 /* ViewController.swift in Sources */,
+				306DE83920CEDC610093DE19 /* UserNameView.swift in Sources */,
 				306DE82120CEB3530093DE19 /* AppDelegate.swift in Sources */,
+				306DE83720CEC6220093DE19 /* AppState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
