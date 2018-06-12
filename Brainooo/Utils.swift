@@ -28,9 +28,11 @@ extension ViewController {
       AppState.connected()
       print("Connected!")
       
-      guard let currentUser = currentUser else { return }
-      self.currentUser = currentUser
-      currentUser.subscribeToRoom(room: currentUser.rooms[0], roomDelegate: self, messageLimit: 0)
+      guard let currentUsers = currentUser else { return }
+      self.currentUser = currentUsers
+      AppState.currentUser = currentUsers
+      
+      currentUsers.subscribeToRoom(room: currentUsers.rooms[0], roomDelegate: self, messageLimit: 0)
     }
   }
   
@@ -56,10 +58,7 @@ extension ViewController {
   }
   
   func playShortSignal() {
-    if UIDevice.current.hasHapticFeedback {
-      mediumImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .light)
-    }
-    mediumImpactFeedbackGenerator?.prepare()
+    
     
     if UIDevice.current.hasHapticFeedback {
       mediumImpactFeedbackGenerator?.impactOccurred()
@@ -71,20 +70,20 @@ extension ViewController {
   }
   
   func playLongSignal() {
-//    if UIDevice.current.hasHapticFeedback {
-//      mediumImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
-//    }
-//    mediumImpactFeedbackGenerator?.prepare()
-//
-//    if UIDevice.current.hasHapticFeedback {
-//      mediumImpactFeedbackGenerator?.impactOccurred()
-//    } else if UIDevice.current.hasTapticEngine {
-//      // Fallback for older devices
-//      let pop = SystemSoundID(1520)
-//      AudioServicesPlaySystemSound(pop)
-//    }
+    //    if UIDevice.current.hasHapticFeedback {
+    //      mediumImpactFeedbackGenerator = UIImpactFeedbackGenerator(style: .heavy)
+    //    }
+    //    mediumImpactFeedbackGenerator?.prepare()
+    //
+    //    if UIDevice.current.hasHapticFeedback {
+    //      mediumImpactFeedbackGenerator?.impactOccurred()
+    //    } else if UIDevice.current.hasTapticEngine {
+    //      // Fallback for older devices
+    //      let pop = SystemSoundID(1520)
+    //      AudioServicesPlaySystemSound(pop)
+    //    }
     AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-
+    
   }
 }
 

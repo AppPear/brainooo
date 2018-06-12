@@ -15,6 +15,9 @@
 		306DE83320CEB9900093DE19 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83220CEB9900093DE19 /* Utils.swift */; };
 		306DE83720CEC6220093DE19 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83620CEC6220093DE19 /* AppState.swift */; };
 		306DE83920CEDC610093DE19 /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83820CEDC610093DE19 /* UserNameView.swift */; };
+		306DE83B20CFE2E70093DE19 /* SelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83A20CFE2E70093DE19 /* SelectionView.swift */; };
+		306DE83D20CFE45A0093DE19 /* CheatSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83C20CFE45A0093DE19 /* CheatSheetView.swift */; };
+		306DE83F20CFE4680093DE19 /* TapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306DE83E20CFE4680093DE19 /* TapView.swift */; };
 		A83B0D643D3DA022CD538E01 /* Pods_Brainooo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 411099CAE43F036961069966 /* Pods_Brainooo.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,9 @@
 		306DE83220CEB9900093DE19 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		306DE83620CEC6220093DE19 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		306DE83820CEDC610093DE19 /* UserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameView.swift; sourceTree = "<group>"; };
+		306DE83A20CFE2E70093DE19 /* SelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionView.swift; sourceTree = "<group>"; };
+		306DE83C20CFE45A0093DE19 /* CheatSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheatSheetView.swift; sourceTree = "<group>"; };
+		306DE83E20CFE4680093DE19 /* TapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapView.swift; sourceTree = "<group>"; };
 		411099CAE43F036961069966 /* Pods_Brainooo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Brainooo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC3E13D30BABA77D882D6936 /* Pods-Brainooo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainooo.release.xcconfig"; path = "Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo.release.xcconfig"; sourceTree = "<group>"; };
 		B8AF9986FAACCA6CB680C807 /* Pods-Brainooo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Brainooo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Brainooo/Pods-Brainooo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,6 +86,9 @@
 				306DE83620CEC6220093DE19 /* AppState.swift */,
 				306DE82220CEB3530093DE19 /* ViewController.swift */,
 				306DE83820CEDC610093DE19 /* UserNameView.swift */,
+				306DE83A20CFE2E70093DE19 /* SelectionView.swift */,
+				306DE83C20CFE45A0093DE19 /* CheatSheetView.swift */,
+				306DE83E20CFE4680093DE19 /* TapView.swift */,
 				306DE83220CEB9900093DE19 /* Utils.swift */,
 				306DE82420CEB3530093DE19 /* Main.storyboard */,
 				306DE82720CEB3550093DE19 /* Assets.xcassets */,
@@ -227,11 +236,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				306DE83F20CFE4680093DE19 /* TapView.swift in Sources */,
+				306DE83D20CFE45A0093DE19 /* CheatSheetView.swift in Sources */,
 				306DE83320CEB9900093DE19 /* Utils.swift in Sources */,
 				306DE82320CEB3530093DE19 /* ViewController.swift in Sources */,
 				306DE83920CEDC610093DE19 /* UserNameView.swift in Sources */,
 				306DE82120CEB3530093DE19 /* AppDelegate.swift in Sources */,
 				306DE83720CEC6220093DE19 /* AppState.swift in Sources */,
+				306DE83B20CFE2E70093DE19 /* SelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,6 +391,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J6DLW4UE6;
 				INFOPLIST_FILE = Brainooo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -398,6 +411,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8J6DLW4UE6;
 				INFOPLIST_FILE = Brainooo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
