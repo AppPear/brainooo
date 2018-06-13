@@ -12,6 +12,10 @@ import PusherChatkit
 class TapView: UIViewController {
   var startTime:Double?
 
+  @IBAction func swipeBack(_ sender: UISwipeGestureRecognizer) {
+    self.dismiss(animated: true, completion: nil)
+  }
+  
   @IBOutlet weak var fingerImageView: UIImageView!
   @IBAction func touchDown(_ sender: Any) {
     startTime = Date().timeIntervalSinceReferenceDate

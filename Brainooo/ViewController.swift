@@ -66,6 +66,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+    print(indexPath.row)
     let message = AppState.friendsList[indexPath.row]
     cell.textLabel?.text = message
     return cell
@@ -75,6 +76,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     guard let currentCell = tableView.cellForRow(at: indexPath) else {
       return
     }
+    print(currentCell.textLabel!.text!)
+    print(indexPath.row)
     AppState.selectedName = currentCell.textLabel!.text!
     if let userNameView = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SelectionView") as? SelectionView
     {
